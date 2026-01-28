@@ -1,4 +1,4 @@
-/* ---------------- ADMIN FORM ---------------- */
+
 
 .admin-container {
   max-width: 720px;
@@ -13,7 +13,6 @@
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
-/* INPUT WITH ICON */
 .input-icon {
   position: relative;
   margin-bottom: 12px;
@@ -35,7 +34,7 @@
   border: 1px solid #ccc;
 }
 
-/* ADMIN BUTTONS */
+
 .admin-actions {
   display: flex;
   gap: 10px;
@@ -51,7 +50,7 @@
   background: #1c8b4a;
 }
 
-/* REMOVE BUTTON RED */
+
 .admin-actions .danger {
   background: #dc3545;
 }
@@ -60,14 +59,14 @@
   background: #b02a37;
 }
 
-/* QR POSITION */
+
 .qr-box {
   margin-top: 16px;
   display: flex;
   justify-content: center;
 }
 
-/* ---------------- CARD VIEW ---------------- */
+
 
 .pro-card {
   display: flex;
@@ -86,7 +85,7 @@
   text-align: center;
 }
 
-/* LOGO – NO CIRCLE BEHIND */
+
 .company-logo {
   width: 140px;
   height: auto;
@@ -96,7 +95,7 @@
   box-shadow: none;
 }
 
-/* QR BELOW LOGO */
+
 .card-left img:last-child {
   margin-top: 10px;
   background: #fff;
@@ -104,7 +103,6 @@
   border-radius: 12px;
 }
 
-/* RIGHT SIDE */
 .card-right {
   width: 65%;
   padding: 30px;
@@ -120,7 +118,7 @@
   margin-bottom: 18px;
 }
 
-/* INFO ROWS WITH ICON CIRCLE */
+
 .info {
   display: flex;
   align-items: center;
@@ -142,7 +140,7 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* SAVE CONTACT BUTTON */
+
 .save-btn,
 .save-contact-btn {
   display: inline-block;
