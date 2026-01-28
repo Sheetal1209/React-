@@ -1,0 +1,130 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+
+.card {
+  width: 720px;
+  border: 3px solid;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.left {
+  width: 35%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 140px;
+}
+
+.qr {
+  width: 120px;
+  background: #fff;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.right {
+  width: 65%;
+  padding: 24px;
+}
+
+.right h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.designation {
+  margin-top: 4px;
+  margin-bottom: 16px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* ===== ICON + TEXT ALIGNMENT ===== */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 36px auto;
+  column-gap: 12px;
+  align-items: flex-start;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.row span:last-child {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* ===== FOOTER IMAGE ===== */
+
+.footer img {
+  width: 100%;
+  display: block;
+}
