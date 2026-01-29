@@ -7,7 +7,7 @@ const emptyCard = () => ({
   name: "",
   designation: "",
   phone1: "",
-  phone2: "",
+  empid: "",
   address: "",
   email1: "",
   email2: "",
@@ -31,21 +31,35 @@ export default function AdminCreateCard() {
     setCards(cards.filter((_, idx) => idx !== i));
   };
 
-  const generateQR = (i) => {
-    const card = cards[i];
-    if (!card.name || !card.phone1) {
-      alert("Name & Phone required");
-      return;
-    }
+  // const generateQR = (i) => {
+  //   const card = cards[i];
+  //   if (!card.name || !card.phone1) {
+  //     alert("Name & Phone required");
+  //     return;
+  //   }
 
-    const id = Date.now().toString();
-    localStorage.setItem(`card-${id}`, JSON.stringify(card));
+  //   const id = Date.now().toString();
+  //   localStorage.setItem(`card-${id}`, JSON.stringify(card));
 
-    const updated = [...cards];
-    updated[i].qrValue = `${window.location.origin}/card?id=${id}`;
-    setCards(updated);
-  };
+  //   const updated = [...cards];
+  //   updated[i].qrValue = `${window.location.origin}/card?id=${id}`;
+  //   setCards(updated);
+  // };
+const generateQR = (i) => {
+  const card = cards[i];
 
+  if (!card.name || !card.designation || !card.empid) {
+    alert("Name, Designation & Employee ID are required");
+    return;
+  }
+
+  const id = Date.now().toString();
+  localStorage.setItem(`card-${id}`, JSON.stringify(card));
+
+  const updated = [...cards];
+  updated[i].qrValue = `${window.location.origin}/card?id=${id}`;
+  setCards(updated);
+};
   return (
     <div className="admin-container">
       <h2>Admin – Create Digital Card</h2>
@@ -68,8 +82,8 @@ export default function AdminCreateCard() {
           </div>
 
           <div className="input-icon">
-            <i className="fa-solid fa-phone-volume" />
-            <input placeholder="Phone 2" onChange={e => updateField(i,"phone2",e.target.value)} />
+            <i class="fa-regular fa-address-book"/>
+            <input placeholder="empid" onChange={e => updateField(i,"empid",e.target.value)} />
           </div>
 
           <div className="input-icon">
